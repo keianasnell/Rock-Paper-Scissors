@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Rock Paper Scissors</title> <!--make this font look like the images used-->
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <h1>Choose your weapon:</h1>
+  <div align = "center">
+    <div class="col" >
+    <button class="btn" id="rock" onclick="Game('rock')">Rock</button> <button id="paper" class="btn" onclick="Game('paper')">Paper</button> <button id="scissors" class="btn" onclick="Game('scissors')">Scissors</button>
+    </div>
+  </div>
+  
+  <div>
+    <div class='row' align ="center">
+      <div class='column'>
+        <figcaption>Your choice</figcaption>
+        <img id="user"/>
+      </div>  
+      <div class='column'>
+        <figcaption>Computer's choice</figcaption>
+        <img id="computer"/>
+        <p id="countdown"></p>
+      </div>
+    </div>
+  </div>
+  
+  <div align="center">
+    <h2 id="result"></h2> <!--only appears after both sides make choice-->
+    <button id="repeat_game" class="btn" onClick="newGame()" disabled=true>Try again?</button> <!--resets current screen (images and win/lose-->
+  </div>
+  
+  
+  <!-- Scripts -->
+  <script src="scripts/index.js"></script>
+</body>
+</html>
